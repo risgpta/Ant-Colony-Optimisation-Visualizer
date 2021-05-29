@@ -42,7 +42,7 @@ function App() {
       <canvas
         ref={canvasRef}
         width="400px"
-        height="600px"
+        height="500px"
         style={{ border: "2px solid black", backgroundColor: "#282c34" }}
         onClick={(e) => storeGuess(e)}
       ></canvas>
