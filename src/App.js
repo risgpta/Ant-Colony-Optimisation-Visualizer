@@ -1,16 +1,10 @@
 import "./App.css";
-import React, { useState, useEffect, createRef } from "react";
+import React, { useState, useRef } from "react";
 
 function App() {
   const [speed, setSpeed] = useState(50);
-  let canvasRef = createRef();
-  var ctx;
+  const canvasRef = useRef(null);
 
-  useEffect(() => {
-    ctx = canvasRef.current.getContext("2d");
-  });
-
-  let index = 0;
   let ants = [];
   let guessX = 0; //stores user's click on canvas
   let guessY = 0; //stores user's click on canvas
@@ -20,25 +14,24 @@ function App() {
     let y = event.nativeEvent.offsetY;
     guessX = x;
     guessY = y;
-    ctx.fillStyle = "#FFFFFF";
-    ctx.fillRect(guessX, guessY, 3, 3);
+    canvasRef.current.getContext("2d").fillStyle = "#FFFFFF";
+    canvasRef.current.getContext("2d").fillRect(guessX, guessY, 3, 3);
     ants.push({
       x: x,
       y: y,
     });
-    index++;
   }
 
   function draw() {
     for (let i = 0; i < ants.length; i++) {
       for (let j = i + 1; j < ants.length; j++) {
         setTimeout(() => {
-          ctx.beginPath();
-          ctx.moveTo(ants[i].x, ants[i].y);
-          ctx.lineTo(ants[j].x, ants[j].y);
-          ctx.strokeStyle =
+          canvasRef.current.getContext("2d").beginPath();
+          canvasRef.current.getContext("2d").moveTo(ants[i].x, ants[i].y);
+          canvasRef.current.getContext("2d").lineTo(ants[j].x, ants[j].y);
+          canvasRef.current.getContext("2d").strokeStyle =
             "#" + Math.floor(Math.random() * 16777215).toString(16);
-          ctx.stroke();
+          canvasRef.current.getContext("2d").stroke();
         }, (i * ants.length + j + 1) * speed);
       }
     }
