@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Ant-Colony-Optimisation-Visualizer/static/css/main.aafe1092.chunk.css",
-    "main.js": "/Ant-Colony-Optimisation-Visualizer/static/js/main.35d1f9ca.chunk.js",
-    "main.js.map": "/Ant-Colony-Optimisation-Visualizer/static/js/main.35d1f9ca.chunk.js.map",
+    "main.css": "/Ant-Colony-Optimisation-Visualizer/static/css/main.26100c9d.chunk.css",
+    "main.js": "/Ant-Colony-Optimisation-Visualizer/static/js/main.879ecc0b.chunk.js",
+    "main.js.map": "/Ant-Colony-Optimisation-Visualizer/static/js/main.879ecc0b.chunk.js.map",
     "runtime-main.js": "/Ant-Colony-Optimisation-Visualizer/static/js/runtime-main.038acd9c.js",
     "runtime-main.js.map": "/Ant-Colony-Optimisation-Visualizer/static/js/runtime-main.038acd9c.js.map",
     "static/js/2.8a66a8a7.chunk.js": "/Ant-Colony-Optimisation-Visualizer/static/js/2.8a66a8a7.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.294a4df1.chunk.js": "/Ant-Colony-Optimisation-Visualizer/static/js/3.294a4df1.chunk.js",
     "static/js/3.294a4df1.chunk.js.map": "/Ant-Colony-Optimisation-Visualizer/static/js/3.294a4df1.chunk.js.map",
     "index.html": "/Ant-Colony-Optimisation-Visualizer/index.html",
-    "static/css/main.aafe1092.chunk.css.map": "/Ant-Colony-Optimisation-Visualizer/static/css/main.aafe1092.chunk.css.map",
+    "static/css/main.26100c9d.chunk.css.map": "/Ant-Colony-Optimisation-Visualizer/static/css/main.26100c9d.chunk.css.map",
     "static/js/2.8a66a8a7.chunk.js.LICENSE.txt": "/Ant-Colony-Optimisation-Visualizer/static/js/2.8a66a8a7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.038acd9c.js",
     "static/js/2.8a66a8a7.chunk.js",
-    "static/css/main.aafe1092.chunk.css",
-    "static/js/main.35d1f9ca.chunk.js"
+    "static/css/main.26100c9d.chunk.css",
+    "static/js/main.879ecc0b.chunk.js"
   ]
 }
