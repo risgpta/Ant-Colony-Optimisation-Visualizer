@@ -10,11 +10,10 @@ To know more: https://en.wikipedia.org/wiki/Travelling_salesman_problem
 
 You can play around with different parameters - ALPHA, BETA and EVAPORATION RATE OF PHERMONE to find your shortest path sooner!!
 
-10 Ants explore around with each click of "Start ACO..." and find the better path in every iteration!!
+10 Ants (start from a city independently and make their tour) explore around with each click of "Start ACO..." and find the better path in every iteration!!
 This NP Hard Problem uses heuristic approach to find better approximate solution
 
-Probability for an ant to select a city = ((phermone amount deposited on a edge)^ALPHA*(distance of that edge)^BETA)/Sum of the Numerator factor for all edges(in path of ant)
-
+Probability for an ant to select a city = ((phermone amount deposited on a edge)^ALPHA*(distance of that edge)^BETA)/Sum of the Numerator factor for all edges(in path of the ant)
 
 
 Probabilty is directly propotional to amount of phermone deposited and inversely proportional to the distance to be covered for the next city (heuristic).
