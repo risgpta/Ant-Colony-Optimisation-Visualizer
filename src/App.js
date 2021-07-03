@@ -83,8 +83,15 @@ function App() {
 
   //Plot points on canvas and does initialisation: makes points array[] and antFlag array[][]
   const plotCityandInit = (event) => {
+    console.log(event);
     let x = event.nativeEvent.offsetX;
     let y = event.nativeEvent.offsetY;
+
+    if (event.type === "touchmove") {
+      console.log(event);
+      x = event.nativeEvent.touches[0].offsetX;
+      y = event.nativeEvent.touches[0].offsetX;
+    }
     let cRef = canvasRef.current.getContext("2d");
     cRef.fillStyle = CITY_COLOR;
     //cRef.fillRect(x, y, 5, 5);
