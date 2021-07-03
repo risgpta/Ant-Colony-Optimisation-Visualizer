@@ -15,8 +15,13 @@ This NP Hard Problem uses heuristic approach to find better approximate solution
 
 Probability for an ant to select a city = ((phermone amount deposited on a edge)^ALPHA*(distance of that edge)^BETA)/Sum of the Numerator factor for all edges(in path of ant)
 
-Probabilty is directly propotional to amount of phermone deposited and inversely proportional to the distance to be covered for the next city...
-This gives guided choice but randomization is also included to explore different paths!
+
+
+Probabilty is directly propotional to amount of phermone deposited and inversely proportional to the distance to be covered for the next city (heuristic).
+This gives guided choice but randomization is also added to explore different paths! 
+
+The solution will not be the best but it will be a better solution considering when we can have none due to its NP hardnes.
+That's what approximate algorithms do!
 
 
 <img width="1774" alt="Screen Shot 2021-06-30 at 11 18 48 PM" src="https://user-images.githubusercontent.com/34606242/124061028-cc4e0680-da4b-11eb-8b38-b058873f30ff.png">
