@@ -1,5 +1,10 @@
-# Ant-Colony-Optimisation-Visualizer
-Ant Colony Optimisation Visualizer for Travelling Salesman Problem
+# Ant-Colony-Optimisation-Visualizer FOR TRAVELLING SALESMAN PROBLEM
+Ant Colony Optimisation Visualizer for the famous Travelling Salesman Problem
+
+short:
+The traveling salesman problem (TSP) is an algorithmic problem tasked with finding the shortest route between a set of points and locations that must be visited. Focused on optimization, TSP is often used in computer science to find the most efficient route for data to travel between various nodes.
+
+To know more: https://en.wikipedia.org/wiki/Travelling_salesman_problem
 
 <img width="1774" alt="Screen Shot 2021-06-30 at 11 18 48 PM" src="https://user-images.githubusercontent.com/34606242/124061028-cc4e0680-da4b-11eb-8b38-b058873f30ff.png">
 On Show MAX
