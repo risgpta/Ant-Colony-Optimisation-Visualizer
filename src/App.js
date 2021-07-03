@@ -10,6 +10,7 @@ function App() {
 
   const [points, setPoints] = useState([]);
   const [pointsPhermone, setPointsPhermone] = useState([]);
+  const [tpointsPhermone, setTPointsPhermone] = useState([]);
   const [antFlag, setAntFlag] = useState([]);
   const [initialPoint, setInitialPoint] = useState(0);
   const [ants, setAnts] = useState(10);
@@ -119,6 +120,7 @@ function App() {
     }
     tempPhermone.push(tempPhermoneArr);
     setPointsPhermone(tempPhermone);
+    setTPointsPhermone(tempPhermone);
   };
 
   //Makes path from p[0] to p[p.length-1] (lines)
@@ -363,7 +365,7 @@ function App() {
       let phermone2D = [...pointsPhermone];
       phermone2D[p][next] += PHERMONE_UNIT;
       phermone2D[next][p] += PHERMONE_UNIT;
-      setPointsPhermone(phermone2D);
+      setTPointsPhermone(phermone2D);
       // eslint-disable-next-line no-loop-func
       //setTimeout(() => {
       //createLine(cities[p], cities[next], color);
@@ -389,7 +391,7 @@ function App() {
     let phermone2D = [...pointsPhermone];
     phermone2D[p][antindex % points.length] += PHERMONE_UNIT;
     phermone2D[antindex % points.length][p] += PHERMONE_UNIT;
-    setPointsPhermone(phermone2D);
+    setTPointsPhermone(phermone2D);
 
     //setTimeout(() => {
     //createLine(cities[p], cities[antindex % points.length], color);
@@ -474,7 +476,7 @@ function App() {
     }
     setAntFlag(temp2);
 
-    let temp = [...pointsPhermone];
+    let temp = [...tpointsPhermone];
     for (let i = 0; i < pointsPhermone.length; i++) {
       for (let j = 0; j < pointsPhermone.length; j++) {
         temp[i][j] *= EVAPORAION_RATE;
@@ -487,6 +489,7 @@ function App() {
     }
 
     setPointsPhermone(temp);
+    setTPointsPhermone(temp);
     setIte(ite + 1);
 
     setShow(false);
