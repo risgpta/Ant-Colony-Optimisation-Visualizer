@@ -86,12 +86,13 @@ function App() {
     console.log(event);
     let x = event.nativeEvent.offsetX;
     let y = event.nativeEvent.offsetY;
+    console.log(x, y);
 
-    if (event.type === "touchmove") {
-      console.log(event);
-      x = event.nativeEvent.touches[0].offsetX;
-      y = event.nativeEvent.touches[0].offsetX;
-    }
+    // if (window.innerWidth <= 768) {
+    //   let mainRect = event.nativeEvent.target.getBoundingClientRect();
+    //   x = event.nativeEvent.targetTouches[0].pageX - mainRect.left;
+    //   y = event.nativeEvent.targetTouches[0].pageY - mainRect.top;
+    // }
     let cRef = canvasRef.current.getContext("2d");
     cRef.fillStyle = CITY_COLOR;
     //cRef.fillRect(x, y, 5, 5);
@@ -567,7 +568,7 @@ function App() {
           />
         </div> */}
         <div style={{ margin: "10px" }}>
-          ALPHA
+          <span style={{ margin: "10px" }}> ALPHA </span>
           <input
             type="number"
             value={ALPHA}
@@ -579,7 +580,7 @@ function App() {
           />
         </div>
         <div style={{ margin: "10px" }}>
-          BETA
+          <span style={{ margin: "10px" }}> BETA </span>
           <input
             type="number"
             value={BETA}
@@ -591,7 +592,9 @@ function App() {
           />
         </div>
         <div style={{ margin: "10px" }}>
-          Evaporation rate of phermone(0-100)(in %)
+          <span style={{ margin: "10px" }}>
+            Evaporation rate of phermone(0-100)(in %)
+          </span>
           <input
             type="number"
             value={EVAPORAION_RATE * 100}
@@ -617,8 +620,8 @@ function App() {
       <div>
         <canvas
           ref={canvasRef}
-          width={window.innerWidth}
-          height={window.innerHeight / 2}
+          width={window.innerWidth > 768 ? window.innerWidth : "400px"}
+          height={window.innerWidth > 768 ? window.innerHeight / 2 : "500px"}
           style={{ border: "2px solid black", backgroundColor: "black" }}
           onClick={(e) => plotCityandInit(e)}
         ></canvas>
