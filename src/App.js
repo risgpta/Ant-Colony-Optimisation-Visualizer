@@ -509,8 +509,25 @@ function App() {
         a edge)^ALPHA*(distance of that edge)^BETA)/Sum of the Numerator factor
         for all edges(in path of ant)
       </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <button onClick={() => ACO()}>Start ACO {ite + 1} Iteration</button>
+      <div
+        style={
+          window.innerWidth > 768
+            ? {
+                display: "flex",
+                justifyContent: "center",
+                margin: "10px",
+                fontSize: "10px",
+              }
+            : {
+                justifyContent: "center",
+                margin: "10px",
+                fontSize: "10px",
+              }
+        }
+      >
+        <button style={{ margin: "10px" }} onClick={() => ACO()}>
+          Start ACO {ite + 1} Iteration
+        </button>
         {/* <button onClick={() => evap()}>Evaporate...</button>
         <button
           onClick={() => {
@@ -542,7 +559,7 @@ function App() {
             }}
           />
         </div> */}
-        <div>
+        <div style={{ margin: "10px" }}>
           ALPHA
           <input
             type="number"
@@ -554,7 +571,7 @@ function App() {
             max="50"
           />
         </div>
-        <div>
+        <div style={{ margin: "10px" }}>
           BETA
           <input
             type="number"
@@ -566,7 +583,7 @@ function App() {
             max="50"
           />
         </div>
-        <div>
+        <div style={{ margin: "10px" }}>
           Evaporation rate of phermone(0-100)(in %)
           <input
             type="number"
@@ -578,17 +595,23 @@ function App() {
             max="100"
           />
         </div>
-        <button onClick={() => testPath(5, points)}>Make Lines</button>
+        <button style={{ margin: "10px" }} onClick={() => testPath(5, points)}>
+          Make Lines
+        </button>
         {/* <button onClick={() => testPath(2, points)}>Clear Lines</button>
         <button onClick={() => testPath(0, points)}>Move point</button> */}
-        <button onClick={() => plotMin()}>Show min</button>
-        <button onClick={() => plotMax()}>Show max</button>
+        <button style={{ margin: "10px" }} onClick={() => plotMin()}>
+          Show min
+        </button>
+        <button style={{ margin: "10px" }} onClick={() => plotMax()}>
+          Show max
+        </button>
       </div>
       <div>
         <canvas
           ref={canvasRef}
-          width="1800px"
-          height="625px"
+          width={window.innerWidth}
+          height={window.innerHeight / 2}
           style={{ border: "2px solid black", backgroundColor: "black" }}
           onClick={(e) => plotCityandInit(e)}
         ></canvas>
