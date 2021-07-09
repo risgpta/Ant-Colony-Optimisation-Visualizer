@@ -1,3 +1,12 @@
+
+
+https://user-images.githubusercontent.com/34606242/125029230-f3898100-e0a6-11eb-9072-cdfa3a5444ec.mov
+
+
+
+https://user-images.githubusercontent.com/34606242/125029264-fe441600-e0a6-11eb-927c-5b56948f7f5a.mov
+
+
 # Ant-Colony-Optimisation-Visualizer FOR TRAVELLING SALESMAN PROBLEM
 Ant Colony Optimisation Visualizer for the famous Travelling Salesman Problem
 
