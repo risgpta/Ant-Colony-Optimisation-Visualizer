@@ -34,8 +34,11 @@ On Show Min
 Path traced by ants
 <img width="1226" alt="Screen Shot 2021-07-01 at 9 05 53 AM" src="https://user-images.githubusercontent.com/34606242/124061051-d2dc7e00-da4b-11eb-8345-54ff9154f686.png">
 
-Example video:
-https://user-images.githubusercontent.com/34606242/124061053-d3751480-da4b-11eb-9ee9-4d2390ef770d.mov
+
+
+https://user-images.githubusercontent.com/34606242/125028168-2a5e9780-e0a5-11eb-80cb-0bc44a962389.mov
+
+
 
 LINK -  https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms
 
